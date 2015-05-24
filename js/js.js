@@ -1,0 +1,23 @@
+$(document).ready(function(){
+    var max=10,counter = 1,stringCounter=' of '+max;
+    $('#number').html(counter+stringCounter);
+    $("#next").bind('click',function(){
+        if(counter<max)
+        $("#test_list").animate({
+           left:"-=100%"
+        },1000,function(){
+            counter++;
+            $('#number').html(counter+stringCounter);
+        });
+    });
+    $("#prev").bind('click',function(){
+        if(counter>1)
+        $("#test_list").animate({
+            left:"+=100%"
+        },1000,function(){
+                counter--;
+                $('#number').html(counter+stringCounter);
+            }
+        );
+    });
+});

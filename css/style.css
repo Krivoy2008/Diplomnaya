@@ -1,0 +1,36 @@
+body {
+    padding-top: 50px;
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+table{
+    margin:0 auto;
+}
+table td{
+    border:1px solid black;
+
+}
+#test_wrapper{
+    width: 100%;
+    position: relative;
+    padding-bottom: 15%;
+    overflow: hidden;
+    height: 290px;
+}
+
+#test_list{
+    width: 1000%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+}
+#test_list>li{
+   float: left;
+    width: 10%;
+}
